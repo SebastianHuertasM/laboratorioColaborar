@@ -1,18 +1,16 @@
-package Trabajo_4_GITHUB.laboratorioColaborar;
+package laboratorioColaborar;
 
 import java.util.Scanner;
 
 public class Ejemplo_2 {
 
     static void main(){
-    Scanner sc = new Scanner(System.in);
-
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("Ingresa (1) para recibir un saludo");
         System.out.println("Ingresa (2) para decir adios");
         System.out.print("Introduzca su opción: ");
         int saludo = sc.nextInt();
-
 
         while (saludo > 0) {
             if (saludo == 1) {
@@ -23,11 +21,13 @@ public class Ejemplo_2 {
                 break;
             }
         }
-        System.out.println("Modificacion de codigo para generar conflicto");
-        if (saludo <= 100){
-            System.out.println("El numero introducido esta entre los primeros 100 numeros");
+
+        // --- LÍNEAS 26 A 31 MODIFICADAS PARA EL CONFLICTO ---
+        System.out.println("Validación alternativa hecha por el usuario 2");
+        if (saludo > 0 && saludo <= 50) {
+            System.out.println("El número introducido está en el rango de 1 a 50");
         } else {
-            System.out.println("su numero no esta del 1 al 100");
+            System.out.println("El número NO está entre 1 y 50");
         }
     }
 }

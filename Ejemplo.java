@@ -1,3 +1,5 @@
+package laboratorioColaborar;
+
 import java.util.Scanner;
 
 public class Ejemplo {
@@ -7,6 +9,8 @@ public class Ejemplo {
 
 
         System.out.println("Ingresa (1) para recibir un saludo");
+        System.out.println("Ingresa (2) para decir adios");
+        System.out.print("Introduzca su opción: ");
         int saludo = sc.nextInt();
 
 
@@ -14,8 +18,9 @@ public class Ejemplo {
             if (saludo == 1) {
                 System.out.println("Mucho Gusto");
                 break;
-            } else {
-                System.out.println("Ingrese 1 para ser saludado");
+            } else if (saludo == 2) {
+                System.out.println("Hasta luego");
+                break;
             }
         }
     }
